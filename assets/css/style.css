@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(6, 14, 31);
+}
+
+.header {
+  width: 100%;
+}
+
+.main-title {
+  display: flex;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(39, 39, 39);
+  position: sticky;
+  top: 0px;
+  padding-bottom: 1rem;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
+  background-color: rgb(39, 39, 39);
+}
+
+.navbar-item {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(27, 27, 109);
+  border: solid 2px rgb(218, 176, 23);
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(27, 27, 109);
+}
+
+.navbar-item:hover,
+.navbar-item:hover a {
+  background-color: rgb(82, 164, 239);
+}
+
+.splash-art {
+  width: 100vw;
+}
+
+.paragraph {
+  color: white;
+  background-color: rgb(12, 27, 59);
+}
+
+.title-section {
+  padding: 1rem;
+  color: white;
+  background-color: rgb(12, 27, 59);
+}
+
+#lore,
+#conclusion,
+#abilities {
+  width: 80vw;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: rgb(12, 27, 59);
+}
+
+#conclusion {
+  margin-bottom: 2rem;
+}
+
+.lore-container,
+.statics,
+.conclusion-container {
+  padding: 1rem;
+  border: solid 1px grey;
+  background-color: rgb(12, 27, 59);
+}
+
+#lore p,
+#abilities p,
+#conclusion p {
+  padding: 0.5rem;
+}
+
+.abilities-title {
+  display: flex;
+  align-items: flex-end;
+  background-color: rgb(12, 27, 59);
+  padding: 0.5rem;
+  border-top: solid 1px grey;
+}
+
+.abilities-title h3 {
+  color: white;
+  padding-left: 0.8rem;
+  background-color: rgb(12, 27, 59);
+}
+
+.abilities-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(12, 27, 59);
+}
+
+.abilities-description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgb(12, 27, 59);
+}
+
+.abilities-container video {
+  width: 50%;
+  margin: 1rem;
+  margin-left: 0;
+  background-color: rgb(12, 27, 59);
+}
+
+.abilities-description p {
+  height: 30%;
+  margin: 1rem;
+}
+
+.abilities-description table {
+  height: 70%;
+  background-color: rgb(12, 27, 59);
+}
+
+caption {
+  background-color: rgb(12, 27, 59);
+  border: solid 1px white;
+  border-bottom: none;
+}
+
+.abilities-table,
+.abilities-table th,
+.abilities-table td {
+  background-color: rgb(12, 27, 59);
+  color: white;
+  border: 1px solid white;
+  border-collapse: collapse;
+  margin: 1rem;
+  text-align: center;
+}
+
+.statics-table {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(12, 27, 59);
+}
+
+.statics-table table,
+.statics-table th,
+.statics-table td {
+  background-color: rgb(12, 27, 59);
+  color: white;
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+@media screen and (max-width: 1138px) {
+  .abilities-container {
+    flex-direction: column;
+  }
+
+  .abilities-description {
+    width: 100%;
+  }
+
+  .abilities-container video {
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .statics-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .statics-table table {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  #lore,
+  #abilities,
+  #conclusion {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    margin-top: 2rem;
+  }
+
+  .lore-container,
+  .statics,
+  .conclusion-container {
+    border: none;
+  }
+
+  .navbar-list {
+    column-gap: 5%;
+  }
+}
+
+#embestida,
+#estocada,
+#esgrima,
+#gran-duelo {
+  background-color: rgb(12, 27, 59);
+}
+
+@media screen and (max-width: 470px) {
+  #gran-duelo,
+  #esgrima {
+    background-color: rgb(12, 27, 59);
+    display: block;
+    overflow-x: auto;
+  }
+
+  #gran-duelo table,
+  #esgrima table {
+    min-width: 100%;
+  }
+
+  .abilities-container video {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  #embestida,
+  #estocada {
+    background-color: rgb(12, 27, 59);
+    display: block;
+    overflow-x: auto;
+  }
+
+  #embestida table,
+  #estocada table {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .navbar-list {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
